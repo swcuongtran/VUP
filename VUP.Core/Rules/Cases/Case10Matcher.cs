@@ -15,7 +15,6 @@ namespace VUP.Core.Rules.Cases
         public override bool IsMatch(WordNode root)
         {
             var xcomp = root.FindChild("xcomp");
-            // Tag "VBG" là cờ của Stanford/spaCy cho động từ V-ing
             return xcomp != null && xcomp.Pos == "VBG";
         }
 

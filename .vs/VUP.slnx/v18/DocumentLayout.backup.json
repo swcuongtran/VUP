@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\VUP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\engine\\vupprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\engine\\vupprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|c:\\users\\admin\\desktop\\vup\\vup.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|solutionrelative:vup.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\engine\\vupprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\engine\\vupprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\engine\\stanfordparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -186,26 +186,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\Program.cs",
               "RelativeDocumentMoniker": "VUP.API\\Program.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\Program.cs",
               "RelativeToolTip": "VUP.API\\Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T21:52:58.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "VupProcessor.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\VupProcessor.cs",
               "RelativeDocumentMoniker": "VUP.Core\\Engine\\VupProcessor.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\VupProcessor.cs",
               "RelativeToolTip": "VUP.Core\\Engine\\VupProcessor.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAADwv2wAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T09:58:46.947Z",
               "EditorCaption": ""

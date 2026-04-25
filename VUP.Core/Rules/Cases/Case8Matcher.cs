@@ -15,7 +15,6 @@ namespace VUP.Core.Rules.Cases
         public override bool IsMatch(WordNode root)
         {
             var xcomp = root.FindChild("xcomp");
-            // Kiểm tra xem mệnh đề bổ ngữ có chứa chữ "to" (mark) không
             return xcomp != null && xcomp.HasChild("mark") && xcomp.FindChild("mark")!.Lemma == "to";
         }
 

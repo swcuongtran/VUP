@@ -12,7 +12,6 @@ namespace VUP.Core.Rules.Cases
         public override int CaseType => 11;
         public override int Priority => 110;
 
-        // Y hệt code Java: Không dobj, không iobj, CÓ advcl
         public override bool IsMatch(WordNode root) =>
             !root.HasChild("dobj") && !root.HasChild("iobj") && root.HasChild("advcl");
 

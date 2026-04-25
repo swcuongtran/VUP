@@ -5,7 +5,7 @@ namespace VUP.Core.Rules
     public class Case5Matcher : BaseMatcher
     {
         public override int CaseType => 5;
-        public override int Priority => 50; // Ưu tiên trung bình
+        public override int Priority => 50; 
 
         public override bool IsMatch(WordNode root) =>
             root.HasChild("dobj") && root.HasChild("compound:prt");

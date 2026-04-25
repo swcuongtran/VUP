@@ -6,6 +6,5 @@ public class Verb
     public required string Lemma { get; set; } 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-    // Quan hệ 1-Nhiều với VerbPattern
     public ICollection<VerbPattern> Patterns { get; set; } = new List<VerbPattern>();
 }

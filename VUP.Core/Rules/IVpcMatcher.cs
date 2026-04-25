@@ -5,7 +5,7 @@ namespace VUP.Core.Rules
     public interface IVpcMatcher
     {
         int CaseType { get; }
-        int Priority { get; } // Thêm trường này
+        int Priority { get; } 
         bool IsMatch(WordNode root);
         ExtractionResult Extract(WordNode root);
     }

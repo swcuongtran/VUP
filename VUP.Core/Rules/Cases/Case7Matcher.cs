@@ -22,7 +22,7 @@ namespace VUP.Core.Rules.Cases
         {
             var iobj = root.FindChild("iobj")?.Text;
             var dobj = root.FindChild("dobj")?.Text;
-            return $"{iobj} {dobj}".Trim(); // gom 2 tân ngữ "him" + "book"
+            return $"{iobj} {dobj}".Trim(); 
         }
     }
 }

@@ -17,7 +17,6 @@ namespace VUP.Core.Rules.Cases
 
         protected override string ExtractAction(WordNode root)
         {
-            // Tìm chữ "for" trong cụm "for help"
             var nmod = root.FindChild("nmod");
             var caseNode = nmod?.FindChild("case")?.Lemma ?? "";
             return $"{root.Lemma} {caseNode}".Trim();

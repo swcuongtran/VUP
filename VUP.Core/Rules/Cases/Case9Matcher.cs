@@ -7,7 +7,6 @@ using VUP.Core.Models;
 
 namespace VUP.Core.Rules.Cases
 {
-    // Case 9: Verb + Obj + To-Infinitive - vd: "allow us to use"
     public class Case9Matcher : BaseMatcher
     {
         public override int CaseType => 9;

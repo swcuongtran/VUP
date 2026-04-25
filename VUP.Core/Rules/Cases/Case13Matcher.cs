@@ -12,7 +12,7 @@ namespace VUP.Core.Rules.Cases
         public override int CaseType => 13;
         public override int Priority => 130;
 
-        public override bool IsMatch(WordNode root) => root.HasChild("ccomp"); // Mệnh đề bổ ngữ
+        public override bool IsMatch(WordNode root) => root.HasChild("ccomp"); 
 
         protected override string ExtractAction(WordNode root) => $"{root.Lemma} that";
         protected override string ExtractObject(WordNode root) => root.FindChild("ccomp")?.Lemma ?? "";

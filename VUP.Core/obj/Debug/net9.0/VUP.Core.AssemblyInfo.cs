@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VUP.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6d63e8f14bb6bc187151c5800718b21e0a4096c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e806e13e62334a6e27d0636182c3dcf816811755")]
 [assembly: System.Reflection.AssemblyProductAttribute("VUP.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VUP.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
