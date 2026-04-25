@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\VUP\VUP.Core\bin\Debug\net9.0\VUP.Core.deps.json
+C:\Users\Admin\Desktop\VUP\VUP.Core\bin\Debug\net9.0\VUP.Core.dll
+C:\Users\Admin\Desktop\VUP\VUP.Core\bin\Debug\net9.0\VUP.Core.pdb
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\VUP.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\VUP.Core.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\VUP.Core.AssemblyInfo.cs
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\VUP.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\VUP.Core.sourcelink.json
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\VUP.Core.dll
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\refint\VUP.Core.dll
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\VUP.Core.pdb
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\ref\VUP.Core.dll
+C:\Users\Admin\Desktop\VUP\VUP.Core\obj\Debug\net9.0\VUP.Core.csproj.AssemblyReference.cache

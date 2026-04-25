@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  vup-postgres:
+    image: postgres:16-alpine
+    container_name: vup_db_container
+    environment:
+      POSTGRES_USER: vup_admin
+      POSTGRES_PASSWORD: VupPassword123!
+      POSTGRES_DB: vup_database
+    ports:
+      - "5432:5432"
+    volumes:
+      - vup-db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@vup.com    
+      PGADMIN_DEFAULT_PASSWORD: admin         
+    ports:
+      - "5050:80"                             
+    depends_on:
+      - vup-postgres                         
+    restart: unless-stopped
+
+volumes:
+  vup-db-data:

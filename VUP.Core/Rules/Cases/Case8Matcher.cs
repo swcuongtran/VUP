@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using VUP.Core.Models;
+
+namespace VUP.Core.Rules.Cases
+{
+    public class Case8Matcher : BaseMatcher
+    {
+        public override int CaseType => 8;
+        public override int Priority => 80;
+
+        public override bool IsMatch(WordNode root)
+        {
+            var xcomp = root.FindChild("xcomp");
+            // Kiểm tra xem mệnh đề bổ ngữ có chứa chữ "to" (mark) không
+            return xcomp != null && xcomp.HasChild("mark") && xcomp.FindChild("mark")!.Lemma == "to";
+        }
+
+        protected override string ExtractAction(WordNode root) => $"{root.Lemma} to do sth";
+        protected override string ExtractObject(WordNode root) => root.FindChild("xcomp")?.Lemma ?? "";
+    }
+}

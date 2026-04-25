@@ -1,0 +1,377 @@
+// Simple Present ----------------------------------------------
+// I take a book.
+Simple_Present;C;un;VBP;(VP (VBP) )
+// own and*** operate
+Simple_Present_CC;C;Cor;VBP-CC-VBP;(VP (VBP) (CC) (VBP) )
+// He takes a book.
+Simple_Present_3rd;C;un;VBZ;(VP (VBZ) )
+// adv is not combined into VP in the Simple Present
+// I am given a book.
+Simple_Present_Pass;C;Cor;VBP_be-VBN;(VP (VBP) (VPPN (VBN) ))
+// He is given a book.
+Simple_Present_Pass_3rd;C;Cor;VBZ_be-VBN;(VP (VBZ) (VPPN (VBN) ))
+// I am often given a book.
+Simple_Present_Pass_Adv;C;Cor;VBP_be-RB-VBN;(VP (VBP) (ADVP (RB)) (VPPN (VBN)) )
+Simple_Present_Pass_most_Adv;C;Cor;VBP_be-RBS-RB-VBN;(VP (VBP) (ADVP (RBS) (RB)) (VPPN (VBN)) )
+//'m more*** favorably impressed
+Simple_Present_Pass_more_Adv;C;Cor;VBP_be-RBR-RB-VBN;(VP (VBP) (ADVP (RBR) (RB)) (VPPN (VBN)) )
+// is more*** than doubled
+Simple_Present_Pass_more_than_Adv;C;Cor;VBP_be-RBR-IN_than-VBN;(VP (VBP) (ADVP (RBR) (IN)) (VPPN (VBN)) )
+Simple_Present_Pass_more_than_Adv;C;Cor;VBZ_be-RBR-IN_than-VBN;(VP (VBP) (ADVP (RBR) (IN)) (VPPN (VBN)) )
+Simple_Present_Pass_2Adv;C;Cor;VBP_be-RB-RB-VBN;(VP (VBP) (ADVP (RB) (RB)) (VPPN (VBN)) )
+Simple_Present_Pass_2AdvA;C;Cor;VBZ_be-RB-RB-VBN;(VP (VBP) (ADVP (RB) (RB)) (VPPN (VBN)) )
+// the following in sentence: "More common chrysotile fibers" in file 3
+//Simple_Present_Pass_Adv2;C;Cor;VBP_be-ADVP-VBN;(VP (VBP) (VPPN (ADVP) (VBN)) )
+// He is often given a book.
+Simple_Present_Pass_Adv3;C;Cor;VBZ_be-RB-VBN;(VP (VBP) (ADVP (RB)) (VPPN (VBN)) )
+// "are", "is", "am" is stemmed to "be"
+// negative of Simple Present: "does" is stemmed to "do"
+// "n't" is stemmed to "not"
+// I do not take a book.
+Simple_Present_Neg;C;Cor;VBP_do-RB^not-VB;(VP (VBP) (RB) (VP (VB)) )
+// He does not take a book.
+Simple_Present_3rd_Neg;C;Cor;VBZ_do-RB^not-VB;(VP (VBZ) (RB) (VP (VB)) )
+// I have not any chance	- chunking
+// am/is/are not
+//Simple_Present_Neg_be;C;Cor;VBP_be-RB^not;(VP (VBP) (RB))
+//Simple_Present_Neg_be2;C;Cor;VBZ_be-RB^not;(VP (VBP) (RB))
+//Simple_Present_Neg_have;C;Cor;VBP_have-RB^not;(VP (VBP) (RB))
+//Simple_Present_Neg_has;C;Cor;VBZ_have-RB^not;(VP (VBP) (RB))
+// I do not often give a book.
+Simple_Present_Adv_Neg;C;Cor;VBP_do-RB^not-RB-VB;(VP (VBP) (RB) (ADVP (RB)) (VP (VB)) )
+// He does not often give a book.
+Simple_Present_3rd_Adv_Neg;C;Cor;VBZ_do-RB^not-RB-VB;(VP (VBZ) (RB) (ADVP (RB)) (VP (VB)) )
+// I am not given a book. He is not given a book.
+Simple_Present_Pass_Neg;C;Cor;VBP_be-RB^not-VBN;(VP (VBP) (RB) (VPPN (VBN)) )
+Simple_Present_Pass_Neg;C;Cor;VBZ_be-RB^not-VBN;(VP (VBP) (RB) (VPPN (VBN)) )
+// I am not often given a book.
+Simple_Present_Pass_Adv_Neg;C;Cor;VBP_be-RB^not-RB-VBN;(VP (VBP) (RB) (ADVP (RB)) (VPPN (VBN)) )
+// He is not often given a book.
+Simple_Present_Pass_Adv_Neg;C;Cor;VBZ_be-RB^not-RB-VBN;(VP (VBP) (RB) (ADVP (RB)) (VPPN (VBN)) )
+// He should take that chance.
+Simple_Present_MD;C;Cor;MD-VB;(VP (MD) (VP (VB)) )
+// He should `` take that chance.
+Simple_Present_MD;C;Cor;MD-``-VB;(VP (MD) (``) (VP (VB)) )
+// He should not take that chance.
+Simple_Present_MD_Neg;C;Cor;MD-RB^not-VB;(VP (MD) (RB) (VP (VB)) )
+// He should often do that thing.
+Simple_Present_MD_Adv;C;Cor;MD-RB-VB;(VP (MD) (ADVP (RB)) (VP (VB)) )
+//would more*** likely go
+Simple_Present_MD_RBR_Adv;C;Cor;MD-RBR-RB-VB;(VP (MD) (ADVP (RBR) (RB)) (VP (VB)) )
+// should more*** than offset
+Simple_Present_MD_RBR_than_Adv;C;Cor;MD-RBR-IN_than-VB;(VP (MD) (ADVP (RBR) (IN)) (VP (VB)) )
+// can no*** longer afford
+Simple_Present_MD_no_longer;C;Cor;MD-RB-RB-VB;(VP (MD) (ADVP (RB) (RB)) (VP (VBP)) )
+Simple_Present_MD_no_longer2;C;Cor;MD-RB-RB-VBP;(VP (MD) (ADVP (RB) (RB)) (VP (VBP)) )
+// He should not often do that thing.
+Simple_Present_MD_Neg_Adv;C;Cor;MD-RB^not-RB-VB;(VP (MD) (RB) (ADVP (RB)) (VP (VB)) )
+// He should be given a book.
+Simple_Present_MD_Pass;C;Cor;MD-VB_be-VBN;(VP (MD) (VB) (VPPN (VBN) ))
+Simple_Present_MD_Pass_CC;C;Cor;MD-VB_be-VBN-CC-VBN;(VP (MD) (VB) (VPPN (VBN) (CC) (VBN) ))
+// He could also be boosted.
+Simple_Present_MD_RB_Pass;C;Cor;MD-RB-VB_be-VBN;(VP (MD) (RB) (VB) (VPPN (VBN) ))
+// He should be given a book.
+Simple_Present_MD_Pass_Neg;C;Cor;MD-RB^not-VB_be-VBN;(VP (MD) (RB) (VB) (VPPN (VBN) ))
+// could n't immediately be reached***
+Simple_Present_MD_Pass_Neg_Adv;C;Cor;MD-RB^not-RB-VB_be-VBN;(VP (MD) (RB) (RB) (VB) (VPPN (VBN) ))
+// He should take and do it. check tree
+Simple_Present_MD_CC;C;Cor;MD-VB-CC-VB;(VP (MD) (VP (VB) (CC) (VB)) )
+// He should not take and do it. check tree
+Simple_Present_MD_CC_Neg;C;Cor;MD-RB^not-VB-CC-VB;(VP (MD) (RB) (VP (VB) (CC) (VB)) )
+// He can/do.
+Simple_Present_MD_only;C;un;MD;(VP (MD))
+// He will.
+Simple_Present_MD_only;C;un;MD^will;(VP (MD))
+// have to/has to. 
+// He has to take that chance.
+Simple_Present_MD_haveTo;C;Cor;VBP_have-TO-VB;(VP (VBP) (TO) (VP (VB)) )
+Simple_Present_MD_hasTo;C;Cor;VBZ_have-TO-VB;(VP (VBZ) (TO) (VP (VB)) )
+Simple_Present_MD_haveTo;C;Cor;VBP_have-RB-TO-VB;(VP (VBP) (RB) (TO) (VP (VB)) )
+Simple_Present_MD_hasTo;C;Cor;VBZ_have-RB-TO-VB;(VP (VBZ) (RB) (TO) (VP (VB)) )
+// have to be considered***
+Simple_Present_MD_haveTo;C;Cor;VBP_have-TO-VB_be-VBN;(VP (VBP) (TO) (VP (VB) (VPPN (VBN)) ) )
+Simple_Present_MD_hasTo;C;Cor;VBZ_have-TO-VB_be-VBN;(VP (VBZ) (TO) (VP (VB) (VPPN (VBN)) ) )
+Simple_Present_MD_haveTo;C;Cor;VBP_have-TO-VB_be-VBG;(VP (VBP) (TO) (VP (VB) (VPPG (VBG)) ) )
+Simple_Present_MD_hasTo;C;Cor;VBZ_have-TO-VB_be-VBG;(VP (VBZ) (TO) (VP (VB) (VPPG (VBG)) ) )
+// ought to
+// He ought to take that chance.
+Simple_Present_MD_oughtTo;C;Cor;MD_ought-TO-VB;(VP (MD) (TO) (VP (VB)) )
+Simple_Present_MD_oughtTo_pass;C;Cor;MD_ought-TO-VB_be-VBN;(VP (MD) (TO) (VP (VB) (VPPN (VBN) ) ) )
+// Simple future ----------------------------------------------
+// I will give a book.
+// "shall" is stemmed to "will"
+Future;C;Cor;MD^will-VB;(VP (MD) (VP (VB)) )
+// I will not give a book.
+// "wo" is stemmed to "will"
+Future_Neg;C;Cor;MD^will-RB^not-VB;(VP (MD) (RB) (VP (VB)) )
+// I will be given a book.
+Future_Pass;C;Cor;MD^will-VB_be-VBN;(VP (MD) (VP (VB) (VPPN (VBN) )))
+Future_Pass_2VBN;C;Cor;MD^will-VB_be-VBN-CC-VBN;(VP (MD) (VP (VB) (VPPN (VBN) (CC) (VBN) )))
+// I will really be given a book.
+Future_Adv_Pass;C;Cor;MD^will-RB-VB_be-VBN;(VP (MD) (ADVP (RB)) (VP (VB) (VPPN (VBN) )))
+Future_Adv_Pass;C;Cor;MD^will-VB_be-RB-VBN;(VP (MD) (VP (VB) (RB) (VPPN (VBN) )))
+//will be totally*** and permanently
+Future_2Adv_Pass;C;Cor;MD^will-VB_be-RB-CC-RB-VBN;(VP (MD) (VP (VB) (RB) (CC) (RB) (VPPN (VBN) )))
+// I will not be given a book.
+Future_Pass_Neg;C;Cor;MD^will-RB^not-VB_be-VBN;(VP (MD) (RB) (VP (VB) (VPPN (VBN) )))
+// I will often give a book.
+Future_Adv;C;Cor;MD^will-RB-VB;(VP (MD) (ADVP (RB)) (VP (VB)) )
+Future_Adv-``;C;Cor;MD^will-``-RB-VB;(VP (MD) (``) (ADVP (RB)) (VP (VB)) )
+// no longer
+Future_Adv;C;Cor;MD^will-RB-RB-VB;(VP (MD) (ADVP (RB) (RB)) (VP (VB)) )
+//Future_Adv2;C;Cor;RB-MD^will-VBN;(VP (ADVP (RB)) (MD) (VP (VB)) )
+// I will not often give a book.
+Future_Adv_Neg;C;Cor;MD^will-RB^not-RB-VB;(VP (MD) (RB) (ADVP (RB) (VP (VB) )))
+// They will take and do it.
+Future_CC;C;Cor;MD^will-VB-CC-VB;(VP (MD) (VP (VB) (CC) (VB)) )
+// Check tree:will and won't do
+Future_will_and_wont;C;Cor;MD^will-CC-MD^will-RB^not-VB;(VP (MD) (CC) (MD) (RB) (VP (VB)) )
+// Future continuous ----------------------------------------------
+// check tree
+Future_continuous;C;Cor;MD^will-VB_be-VBG;(VP (MD) (VP (VB) (VPPG (VBG))) )
+// Future + present perfect -----------------------------------------
+Future_perfect;C;Cor;MD^will-VB_have-VBN;(VP (MD) (VP (VB) (VPPN (VBG))) )
+// Simple past ----------------------------------------------
+// I took a book.
+Simple_Past;C;un;VBD;(VP (VBD) )
+//Simple_Past_CC;C;Cor;VBD-CC-VBD;(VP (VBD) (CC) (VBD) )
+// I took a book.
+//Simple_Past_Adv;C;Cor;RB-VBD;(VP (ADVP (RB)) (VP (VBD)) )
+// I was/were given a book. was/were is stemmed to "be"
+Simple_Past_Pass;C;Cor;VBD_be-VBN;(VP (VBD) (VPPN (VBN) ))
+// was ``*** ticked
+Simple_Past_Pass2;C;Cor;VBD_be-``-VBN;(VP (VBD) (``) (VPPN (VBN) ))
+// was dismissed and*** succeeded
+Simple_Past_Pass_CC;C;Cor;VBD_be-VBN-CC-VBN;(VP (VBD) (VPPN (VBN) (CC) (VBN) ))
+// were most*** affected
+Simple_Past_RBS_Pass;C;Cor;VBD_be-RBS-VBN;(VP (VBD) (RBS) (VPPN (VBN) ))
+// I was rarely given a book.
+Simple_Past_Pass_Adv;C;Cor;VBD_be-RB-VBN;(VP (VBD) (ADVP (RB)) (VPPN (VBN)) )
+Simple_Past_Pass_both;C;Cor;VBD_be-DT-VBN;(VP (VBD) (ADVP (RB)) (VPPN (VBN)) )
+Simple_Past_Pass_2Adv;C;Cor;VBD_be-RB-RB-VBN;(VP (VBD) (ADVP (RB) (RB)) (VPPN (VBN)) )
+Simple_Past_Pass_AllBut;C;Cor;VBD_be-DT_all-CC_but-VBN;(VP (VBD) (ADVP (DT) (CC)) (VPPN (VBN)) )
+// negative of Simple Past: "did" is stemmed to "do"
+// "n't" is stemmed to "not"
+// I did not take a book.
+Simple_Past_Neg;C;Cor;VBD_do-RB^not-VB;(VP (VBD) (RB) (VP (VB)) )
+// I did not often give a book.
+Simple_Past_Adv_Neg;C;Cor;VBD_do-RB^not-RB-VB;(VP (VBD) (RB) (ADVP (RB)) (VP (VB)) )
+// I did not often given a book.
+Simple_Past_Pass_Adv_Neg;C;Cor;VBD_be-RB^not-RB-VBN;(VP (VBD) (RB) (ADVP (RB)) (VPPN (VBN)) )
+// Past_Perfect ----------------------------------------------
+// I had given a book.
+Past_Perfect;C;Cor;VBD_have-VBN;(VP (VBD) (VPPN (VBN)))
+// I had not been given a book.
+Past_Perfect;C;Cor;VBD_have-RB^not-VBN;(VP (VBD) (RB) (VPPN (VBN)))
+// I had been given a book.
+Past_Perfect_Pass;C;Cor;VBD_have-VBN_be-VBN;(VP (VBD) (VPPN (VBN) (VPPN (VBN))))
+// I had often given a book.
+Past_Perfect_Adv;C;Cor;VBD_have-RB-VBN;(VP (VBD) (RB) (VPPN (VBN)))
+//had long*** chafed
+Past_Perfect_Adv_long;C;Cor;VBD_have-JJ-VBN;(VP (VBD) (JJ) (VPPN (VBN)))
+// I had often been given a book.
+Past_Perfect_Adv_Pass;C;Cor;VBD_have-RB-VBN_be-VBN;(VP (VBD) (ADVP (RB)) (VPPN (VBN) (VPPN (VBN))))
+// I had not given a book.
+Past_Perfect_Neg;C;Cor;VBD_have-RB^not-VBN;(VP (VBD) (RB) (VPPN (VBN)))
+// I have not often given a book.
+Past_Perfect_Adv_Neg;C;Cor;VBD_have-RB^not-RB-VBN;(VP (VBD) (RB) (ADVP (RB)) (VPPN (VBN)))
+// I had given and taken books.
+Past_Perfect_CC;C;Cor;VBD_have-VBN-CC-VBN;(VP (VBD) (VPPN (VBN) (CC) (VBN)))
+/ Present_Perfect ----------------------------------------------
+// I have given a book.
+Present_Perfect;C;Cor;VBP_have-VBN;(VP (VBP) (VPPN (VBN)))
+// I have given and taken books.
+Present_Perfect_CC;C;Cor;VBP_have-VBN-CC-VBN;(VP (VBP) (VPPN (VBN) (CC) (VBN)))
+Present_Perfect_3CC;C;Cor;VBP_have-VBN-,-VBN-CC-VBN;(VP (VBP) (VPPN (VBN) (,) (VBN) (CC) (VBN)))
+// He has given a book.
+// "has" is stemmed to "have"
+Present_Perfect_3rd;C;Cor;VBZ_have-VBN;(VP (VBZ) (VPPN (VBN)))
+Present_Perfect_CC;C;Cor;VBZ_have-VBN-CC-VBN;(VP (VBZ) (VPPN (VBN) (CC) (VBN)))
+Present_Perfect_3CC;C;Cor;VBZ_have-VBN-,-VBN-CC-VBN;(VP (VBZ) (VPPN (VBN) (,) (VBN) (CC) (VBN)))
+// I have often given a book.
+Present_Perfect_Adv;C;Cor;VBP_have-RB-VBN;(VP (VBP) (ADVP (RB)) (VPPN (VBN)))
+Present_Perfect_Adv;C;Cor;VBZ_have-RB-VBN;(VP (VBZ) (ADVP (RB)) (VPPN (VBN)))
+Present_Perfect_Adv;C;Cor;VBP_have-DT_all-VBN;(VP (VBP) (ADVP (RB)) (VPPN (VBN)))
+Present_Perfect_Adv;C;Cor;VBZ_have-DT_all-VBN;(VP (VBZ) (ADVP (RB)) (VPPN (VBN)))
+// since
+Present_Perfect_Adv;C;Cor;VBP_have-IN-VBN;(VP (VBP) (IN) (VPPN (VBN)))
+Present_Perfect_Adv;C;Cor;VBZ_have-IN-VBN;(VP (VBZ) (IN) (VPPN (VBN)))
+// has more than quadrupled
+Present_Perfect_more_than_Adv;C;Cor;VBP_have-RBR_more-IN_than-VBN;(VP (VBP) (ADVP (RBR) (IN)) (VPPN (VBN)))
+Present_Perfect_more_than_Adv;C;Cor;VBZ_have-RBR_more-IN_than-VBN;(VP (VBP) (ADVP (RBR) (IN)) (VPPN (VBN)))
+Present_Perfect_more_than_Adv;C;Cor;VBP_have-JJR_more-IN_than-VBN;(VP (VBP) (ADVP (RBR) (IN)) (VPPN (VBN)))
+Present_Perfect_more_than_Adv;C;Cor;VBZ_have-JJR_more-IN_than-VBN;(VP (VBP) (ADVP (RBR) (IN)) (VPPN (VBN)))
+// He has often given a book.
+Present_Perfect_3rd_Adv;C;Cor;VBZ_have-RB-VBN;(VP (VBZ) (ADVP (RB)) (VPPN (VBN)))
+// no longer/ so far
+Present_Perfect_no_longer;C;Cor;VBP_have-RB-RB-VBN;(VP (VBP) (ADVP (RB) (RB)) (VPPN (VBN)))
+Present_Perfect_no_longer;C;Cor;VBZ_have-RB-RB-VBN;(VP (VBZ) (ADVP (RB) (RB)) (VPPN (VBN)))
+// I have not given a book.
+Present_Perfect_Neg;C;Cor;VBP_have-RB^not-VBN;(VP (VBP) (RB) (VPPN (VBN)))
+Present_Perfect_Neg_CC;C;Cor;VBP_have-RB^not-VBN-CC-VBN;(VP (VBP) (RB) (VPPN (VBN) (CC) (VBN)))
+// He has not given a book.
+// He has not given a book.
+Present_Perfect_3rd_Neg;C;Cor;VBZ_have-RB^not-VBN;(VP (VBZ) (RB) (VPPN (VBN)))
+Present_Perfect_3rd_Neg_CC;C;Cor;VBZ_have-RB^not-VBN-CC-VBN;(VP (VBZ) (RB) (VPPN (VBN) (CC) (VBN)))
+//has been scheduled
+Present_Perfect_Pass;C;Cor;VBP_have-VBN_be-VBN;(VP (VBP) (VPPN (VBN) (VPPN (VBN))))
+Present_Perfect_3rd_Pass;C;Cor;VBZ_have-VBN_be-VBN;(VP (VBZ) (VPPN (VBN) (VPPN (VBN))))
+Present_Perfect_adv_Pass;C;Cor;VBP_have-RB-VBN_be-VBN;(VP (VBP) (RB) (VPPN (VBN) (VPPN (VBN))))
+Present_Perfect_3rd_adv_Pass;C;Cor;VBZ_have-RB-VBN_be-VBN;(VP (VBZ) (RB) (VPPN (VBN) (VPPN (VBN))))
+//has not been scheduled
+Present_Perfect_Neg_Pass;C;Cor;VBP_have-RB^not-VBN_be-VBN;(VP (VBZ) (RB) (VPPN (VBN) (VPPN (VBN))))
+Present_Perfect_3rd_Neg_Pass;C;Cor;VBZ_have-RB^not-VBN_be-VBN;(VP (VBZ) (RB) (VPPN (VBN) (VPPN (VBN))))
+// I have not often given a book.
+Present_Perfect_Adv_Neg;C;Cor;VBP_have-RB^not-RB-VBN;(VP (VBP) (RB) (ADVP (RB)) (VPPN (VBN)))
+// He has not often given a book.
+Present_Perfect_3rd_Adv_Neg;C;Cor;VBZ_have-RB^not-RB-VBN;(VP (VBZ) (RB) (ADVP (RB)) (VPPN (VBN)))
+// I would have given a book.
+Present_Perfect_MD;C;Cor;MD-VB_have-VBN;(VP (MD) (VBP) (VPPN (VBN)))
+Present_Perfect_MD_RB;C;Cor;MD-VB_have-RB-VBN;(VP (MD) (VB) (RB) (VPPN (VBN)))
+Present_Perfect_MD_neg;C;Cor;MD-RB^not-VB_have-VBN;(VP (MD) (RB) (VBP) (VPPN (VBN)))
+Present_Perfect_MD_RB_neg;C;Cor;MD-RB^not-VB_have-RB-VBN;(VP (MD) (RB) (VB) (RB) (VPPN (VBN)))
+Present_Perfect;C;Cor;VBP_have-``-VBN;(VP (VBP) (``) (VPPN (VBN)))
+Present_Perfect_3rd;C;Cor;VBZ_have-``-VBN;(VP (VBZ) (``) (VPPN (VBN)))
+Present_Perfect;C;Cor;VBP_have-``-RB-VBN;(VP (VBP) (``) (RB) (VPPN (VBN)))
+Present_Perfect_3rd;C;Cor;VBZ_have-``-RB-VBN;(VP (VBZ) (``) (RB) (VPPN (VBN)))
+// check 6 following trees
+Present_Perfect_Pass;C;Cor;VBP_have-VBN_be-VBN;(VP (VBP) (VPPN (VBN) (VBN)))
+Present_Perfect_Pass_3rd;C;Cor;VBZ_have-VBN_be-VBN;(VP (VBZ) (VPPN (VBN) (VBN)))
+Present_Perfect_Pass_Adv;C;Cor;VBP_have-VBN_be-RB-VBN;(VP (VBP) (VPPN (VBN) (RB) (VBN)))
+Present_Perfect_Pass_3rd_Adv;C;Cor;VBZ_have-VBN_be-RB-VBN;(VP (VBZ) (VPPN (VBN) (RB) (VBN)))
+Present_Perfect_Pass_Adv;C;Cor;VBP_have-RB-VBN_be-RB-VBN;(VP (VBP) (RB) (VPPN (VBN) (RB) (VBN)))
+Present_Perfect_Pass_3rd_Adv;C;Cor;VBZ_have-RB-VBN_be-RB-VBN;(VP (VBZ) (RB) (VPPN (VBN) (RB) (VBN)))
+Present_Perfect_Pass_CC;C;Cor;VBP_have-VBN_be-VBN-CC-VBN;(VP (VBP) (VPPN (VBN) (VPPN (VBN) (CC) (VBN) )))
+Present_Perfect_Pass_3rd_CC;C;Cor;VBZ_have-VBN_be-VBN-CC-VBN;(VP (VBZ) (VPPN (VBN) (VPPN (VBN) (CC) (VBN) )))
+Present_Perfect_MD_Pass;C;Cor;MD-VB_have-VBN_be-VBN;(VP (MD) (VB) (VPPN (VBN) (VBN)))
+// Present_Perfect_Continuous ----------------------------------------------
+Perfect_Continuous;C;Cor;VBP_have-VBN_be-VBG;(VP (VBP) (VPPN (VBN) (VP (VBG))))
+Perfect_Continuous_3rd;C;Cor;VBZ_have-VBN_be-VBG;(VP (VBP) (VPPN (VBN) (VP (VBG))))
+Perfect_Continuous_Adv;C;Cor;VBP_have-RB-VBN_be-VBG;(VP (VBP) (RB) (VPPN (VBN) (VP (VBG))))
+Perfect_Continuous_3rd_adv;C;Cor;VBZ_have-RB-VBN_be-VBG;(VP (VBP) (RB) (VPPN (VBN) (VP (VBG))))
+// Past_Perfect_Continuous ----------------------------------------------
+Past_Perfect_Continuous;C;Cor;VBD_have-VBN_be-VBG;(VP (VBP) (VPPN (VBN) (VP (VBG))))
+Past_Perfect_Continuous_Adv;C;Cor;VBD_have-RB-VBN_be-VBG;(VP (VBP) (RB) (VPPN (VBN) (VP (VBG))))
+// Present_Continuous ----------------------------------------------
+// I am giving a book.
+Present_Continuous;C;Cor;VBP_be-VBG;(VP (VBP) (VPPG (VBG)))
+Present_Continuous_CC;C;Cor;VBP_be-VBG-CC-VBG;(VP (VBP) (VPPG (VBG) (CC) (VBG)))
+// He is giving a book.
+Present_Continuous_3rd;C;Cor;VBZ_be-VBG;(VP (VBZ) (VPPG (VBG)))
+// I am not giving a book.
+Present_Continuous_Neg;C;Cor;VBP_be-RB^not-VBG;(VP (VBP) (RB) (VPPG (VBG)))
+// He is not giving a book.
+Present_Continuous_3rd_Neg;C;Cor;VBZ_be-RB^not-VBG;(VP (VBZ) (RB) (VPPG (VBG)))
+Present_Continuous_pass;C;Cor;VBP_be-VBG_be-VBN;(VP (VBP) (VPPG (VBG) (VP (VBN)) ))
+Present_Continuous_pass_3rd;C;Cor;VBZ_be-VBG_be-VBN;(VP (VBP) (VPPG (VBG) (VP (VBN)) ))
+// are/is often being given
+Present_Continuous_adv_pass;C;Cor;VBP_be-RB-VBG_be-VBN;(VP (VBP) (RB) (VPPG (VBG) (VP (VBN)) ))
+Present_Continuous_adv_pass_3rd;C;Cor;VBZ_be-RB-VBG_be-VBN;(VP (VBZ) (RB) (VPPG (VBG) (VP (VBN)) ))
+// is n't being filled*** check 2 trees
+Present_Continuous_pass_neg;C;Cor;VBP_be-RB^not-VBG_be-VBN;(VP (VBP) (RB) (VPPG (VBG) (VP (VBN)) ))
+Present_Continuous_pass_neg;C;Cor;VBZ_be-RB^not-VBG_be-VBN;(VP (VBP) (RB) (VPPG (VBG) (VP (VBN)) ))
+// the top money funds are currently yielding...
+Present_Continuous_Adv;C;Cor;VBP_be-RB-VBG;(VP (VBP) (ADVP (RB)) (VPPG (VBG)))
+Present_Continuous_3rd_Adv;C;Cor;VBZ_be-RB-VBG;(VP (VBZ) (ADVP (RB)) (VPPG (VBG)))
+// the top money funds are not currently yielding...
+Present_Continuous_Adv;C;Cor;VBP_be-RB^not-RB-VBG;(VP (VBP) (RB) (ADVP (RB)) (VPPG (VBG)))
+Present_Continuous_3rd_Adv;C;Cor;VBZ_be-RB^not-RB-VBG;(VP (VBZ) (RB) (ADVP (RB)) (VPPG (VBG)))
+// I am giving and taking books.
+Present_Continuous_CC;C;Cor;VBP_be-VBG-CC-VBG;(VP (VBP) (VPPG (VBG) (CC) (VBG)))
+//must be coming
+Present_Continuous_MD;C;Cor;MD-VB_be-VBG;(VP (MD) (VBP) (VPPG (VBG)))
+// now are accusing
+Present_Continuous_now;C;Cor;RB_now-VB_be-VBG;(VP (RB) (VBP) (VPPG (VBG)))
+// Simple Past ----------------------------------------------
+// I took a book.
+Simple_Past;C;un;VBD;(VP (VBD) )
+// adv is not combined into VP in the Simple Past
+//more*** than doubled
+Simple_Past_more_than;C;Cor;JJR_more-IN_than-VBD;(VP (JJR) (IN) (VBD) )
+// I was given a book.
+Simple_Past_Pass;C;Cor;VBD_be-VBN;(VP (VBD) (VPPN (VBN) ))
+// I was often given a book.
+Simple_Past_Pass_Adv;C;Cor;VBD_be-RB-VBN;(VP (VBD) (ADVP (RB)) (VPPN (VBN)) )
+// the following in sentence: "More common chrysotile fibers" in file 3
+//Simple_Past_Pass_Adv2;C;Cor;VBD_be-ADVP-VBN;(VP (VBD) (VPPN (ADVP) (VBN)) )
+// "was", "were" is stemmed to "be"
+// negative of Simple Past: "did" is stemmed to "do"
+// "n't" is stemmed to "not"
+// I did not take a book.
+Simple_Past_Neg;C;Cor;VBD_do-RB^not-VB;(VP (VBD) (RB) (VP (VB)) )
+// I had not any chance
+Simple_Past_Neg_have;C;Cor;VBD_have-RB^not;(VP (VBD) (RB))
+// I was not a bad person.
+// was/were not - sentence "The guideline was n't a law"
+//Simple_Past_Neg_have;C;Cor;VBD_be-RB^not;(VP (VBD) (RB))
+// I did not often give a book.
+Simple_Past_Adv_Neg;C;Cor;VBD_do-RB^not-RB-VB;(VP (VBD) (RB) (ADVP (RB)) (VP (VB)) )
+// I was not often given a book.
+Simple_Past_Pass_Neg;C;Cor;VBD_be-RB^not-VBN;(VP (VBD) (RB) (VPPN (VBN)) )
+// I was not often given a book.
+Simple_Past_Pass_Adv_Neg;C;Cor;VBD_be-RB^not-RB-VBN;(VP (VBD) (RB) (ADVP (RB)) (VPPN (VBN)) )
+// Past_Continuous ----------------------------------------------
+// I was giving a book.
+Past_Continuous;C;Cor;VBD_be-VBG;(VP (VBD) (VPPG (VBG)))
+// I was not giving a book.
+Past_Continuous_Neg;C;Cor;VBD_be-RB^not-VBG;(VP (VBD) (RB) (VPPG (VBG)))
+// the top money funds were currently yielding...
+Past_Continuous_Adv;C;Cor;VBD_be-RB-VBG;(VP (VBD) (ADVP (RB)) (VPPG (VBG)))
+Past_Continuous_2Adv;C;Cor;VBD_be-RB-RB-VBG;(VP (VBD) (RB) (RB) (VPPG (VBG)))
+// the top money funds were not currently yielding...
+Past_Continuous_Adv;C;Cor;VBD_be-RB^not-RB-VBG;(VP (VBD) (RB) (ADVP (RB)) (VPPG (VBG)))G)))
+// was being fired
+Past_Continuous_pass;C;Cor;VBD_be-VBG_be-VBN;(VP (VBD) (VPPG (VBG) (VPPN (VBN) ) ))
+// passive phrase ----------------------------------------------
+To_be_VBN;P;Cor;TO-VB_be-VBN;(VP (TO) (VB) (VBN))
+//to be restored or*** created
+To_be_VBN;P;Cor;TO-VB_be-VBN-CC-VBN;(VP (TO) (VB) (VBN) (CC) (VBN))
+being_VBN;P;Cor;VBG_be-VBN;(VP (VBG) (VBN))
+// being applied
+being_VBN;P;Cor;VBG_being-VBN;(VP (VBG) (VBN))
+being_VBN;P;Cor;NN_being-VBN;(VP (VBG) (VBN))
+been_VBN;P;Cor;VBN_been-VBN;(VP (VBN) (VBN))
+// now*** being offered
+now_being_VBN;P;Cor;RB_now-VBG_being-VBN;(VP (RB) (VBG) (VBN))
+To_vp;P;un;TO-VB;(VP (TO) (VB))
+MD_VB;P;Cor;MD-VB;(VP (MD) (VB))
+To_vp-``;P;Cor;TO-``-VB;(VP (TO) (``) (VB))
+To_vp_CC;P;Cor;TO-VB-CC-VB;(VP (TO) (VP (VB) (CC) (VB)))
+To_rb_vp;P;Cor;TO-RB-VB;(VP (TO) (ADVP (RB)) (VB))
+vb_cc_vb;P;Cor;VB-''-CC-``-VB;(VP (VB) ('') (CC) (``) (VB) )
+// check tree
+To_be-vpg;P;Cor;TO-VB_be-VBG;(VP (TO) (VB) (VBG))
+VB;P;un;VB;(VP (VB))
+VB_cc_VB;P;Cor;VB-CC-VB;(VP (VB) (CC) (VB))
+// and not allow: CC --> parallel --> attach
+//and_not_vb;P;Cor;CC-RB^not-VB;(VP (CC) (RB) (VB))
+VBG_cc_VBG;P;Cor;VBG-CC-VBG;(VP (VBG) (CC) (VBG))
+VBN_cc_VBN;P;Cor;VBN-CC-VBN;(VP (VBN) (CC) (VBN))
+//to_both_vp_CC;P;Cor;TO-DT_both-VB-CC-VB;(VP (TO) (DT) (VB) (CC) (VB) )
+to_both_vp;P;Cor;TO-DT_both-VB;(VP (TO) (DT) (VB))
+// the latter in sentence: "Economists suggested that" but not yet working
+both_TO_vb;P;Cor;DT_both-TO-VB;(VP (DT) (TO) (VB))
+//more than vb
+more_than_VB;P;Cor;RBR-IN_than-VB;(VP (RBR) (IN) (VB))
+more_than_VB;P;Cor;JJR-IN_than-VB;(VP (JJR) (IN) (VB))
+// check tree:
+be_made;P;Cor;VB_be-VBN;(VP (VB) (VPPN (VBN)) )
+// check 2 trees:
+having_VBN;P;Cor;VBG_have-VBN;(VP (VBG) (VPPN (VBN)) )
+to_have_VBN;P;Cor;TO-VB_have-VBN;(VP (TO) (VB) (VPPN (VBN)) )
+to_have_adv_VBN;P;Cor;TO-VB_have-RB-VBN;(VP (TO) (VB) (RB) (VPPN (VBN)) )
+have_VBN;P;Cor;VB_have-VBN;(VP (VB) (VPPN (VBN)) )
+//to have been involved***
+to_have_been_VBN;P;Cor;TO-VB_have-VBN_be-VBN;(VP (TO) (VB) (VPPN (VBN) (VPPN (VBN)) ) )
+// be aware: 1 right but 1 wrong somewhere
+//most_RB_VBN;P;Cor;RBS_most-RB-VBN;(VP (RBS) (RB) (VBN) )
+comma_much_less_VB;P;Cor;,-RB-JJR-VB;(VP (,) (RB) (JJR) (VB))
+comma_less_VB;P;Cor;,-JJR-VB;(VP (,) (JJR) (VB))
+// extra 2 wrong sens:
+not_VBG;P;Cor;RB^not-VBG;(VP (RB) (VBG))
+//rb_vbd_cc_rb_vbd;P;Cor;RB-VBD-CC-RB-VBD;(VP (RB) (VBD) (CC) (RB) (VBD) )
+rb_cc_rb_vb_cc_vb;P;Cor;RB-CC-RB-VB-CC-VB;(VP (RB) (CC) (RB) (VB) (CC) (VB) )
+// jjr_to_vb: longer to do
+//jjr_to_vb;P;Cor;JJR-TO-VB;(VP (JJR) (TO) (VP (VB)))
+// jjr_to_vb: any longer to do
+any_jjr_to_vb;P;Cor;DT_any-JJR-TO-VB;(VP (DT) (JJR) (TO) (VP (VB)))

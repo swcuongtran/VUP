@@ -1,0 +1,113 @@
+// Simple Present ----------------------------------------------
+// I take a book.
+Simple_Present;;VBP
+// I own and operate
+//Simple_Present_CC;CC;VBP-CC-VBP
+// He takes a book.
+Simple_Present_3rd;;VBZ
+// adv is not combined into VP in the Simple Present
+// I am given a book
+Simple_Present_Pass;auxpass_be_VBP;VBN
+//He is beaten by James
+Simple_Present_Pass;auxpass_be_VBZ;VBN
+// He should take a chance.	- not "will"
+Simple_Present_MD;aux;VB
+// He can/does/do/will.
+//Simple_Present_MD_only;;MD
+// have to/has to. 
+// He has to take that chance. --> messy tdeps
+//Simple_Present_MD_haveTo;VBP_have-TO-VB;(VP (VBP) (TO) (VP (VB)) )
+// have to be considered
+//Simple_Present_MD_haveTo;VBP_have-TO-VB_be-VBN;(VP (VBP) (TO) (VP (VB) (VPPN (VBN)) ) )
+// ought to
+// He ought to take that chance.
+// Simple Past ----------------------------------------------
+// I took a book.
+Simple_Past;;VBD
+// I was given a book.
+Simple_Past_Passive;auxpass_be_VBD;VBN
+// Past_Continuous ----------------------------------------------
+// I was giving a book.
+Past_Continuous;aux_be_VBD;VBG
+// was being fired - I was being given a book.
+Past_Continuous_Pass;aux_be_VBD-auxpass_be_VBG;VBN
+// Simple future ----------------------------------------------
+// I will give a book.
+// "shall" is stemmed to "will"
+Future;aux_will;VB
+// I will not give a book.
+// "wo" is stemmed to "will"
+// I will be given a book.
+Future_Pass;aux_will-auxpass_be;VBN
+// I will really be given a book.
+//will be totally*** and permanently
+// I will not be given a book.
+// I will often give a book.
+// no longer
+// I will not often give a book.
+// They will take and do it.
+//Future_CC;MD^will-VB-CC-VB
+// Check tree:will and won't do
+//Future_will_and_wont;MD^will-CC-MD^will-RB^not-VB;(VP (MD) (CC) (MD) (RB) (VP (VB)) )
+// Future continuous ----------------------------------------------
+// He will be taking his son to a game
+Future_continuous;aux_will-aux_be;VBG
+// Future + present perfect -----------------------------------------
+// He will have given a book.
+Future_perfect;aux_will-aux_have;VBN
+// Simple past ----------------------------------------------
+// I took a book.
+Simple_Past;;VBD
+// I was/were given a book. was/were is stemmed to "be"
+Simple_Past_Passive;auxpass_be_VBD;VBN
+// Present_Perfect ----------------------------------------------
+// I have given a book.
+Present_Perfect_1st;aux_have_VBP;VBN
+// He has given a book.
+Present_Perfect_3rd;aux_have_VBZ;VBN
+// I have been given a book.
+Present_Perfect_1st_Passive;aux_have_VBP-auxpass_be;VBN
+Present_Perfect_3rd_Passive;aux_have_VBZ-auxpass_be;VBN
+MD_Present_Perfect;aux_would-aux_have;VBN
+MD_Present_Perfect_Passive;aux_would-aux_have-auxpass_be;VBN
+// Past_Perfect ----------------------------------------------
+// I had given a book.
+Past_Perfect;aux_have_VBD;VBN
+// I had been given a book.
+Past_Perfect_Passive;aux_have_VBD-auxpass_be;VBN(VP (VBG))))
+// Present_Continuous ----------------------------------------------
+// I am giving a book.
+Present_Continuous_1st;aux_be_VBP;VBG
+// He is giving a book.
+Present_Continuous_3rd;aux_be_VBZ;VBG
+// I am been giving a book.
+Present_Continuous_Passive;auxpass_be_VBP-aux_be;VBG
+// Past_Continuous ----------------------------------------------
+// I was giving a book.
+Past_Continuous;aux_be_VBD;VBG
+// I was been giving a book.
+Past_Continuous_Passive;auxpass_be_VBD-aux_be;VBG
+// Present_Perfect_Continuous ----------------------------------------------
+// I have been giving a book.
+Present_Perfect_Continuous_1st;aux_have_VBP-aux_be_VBN;VBG
+// He has been giving a book.
+Present_Perfect_Continuous_3rd;aux_have_VBZ-aux_be_VBN;VBG
+// I have been being given a book.
+Present_Perfect_Continuous_Passive_1st;aux_have_VBP-aux_be_VBN-auxpass_be_VBG;VBN
+// He has been being given a book.
+Present_Perfect_Continuous_Passive_3rd;aux_have_VBZ-aux_be_VBN-auxpass_be_VBG;VBN
+// The man who has been arrived with James yesterday speaks with Tom, who is his dad, a lot today. nested VP
+// CC
+// I own and operate a machine.
+// I own a machine and give it to a friend.
+// I have taken a machine and given it to a man.
+// I have a machine and will give it to my friend.
+// I run a mile, play a game, and watch movies. - parser wrong
+// I have been running a mile and she has been watching me doing that. - correct difficult sen
+// Nested VP:
+// The man said he will come.
+// VBG and VBN need to be checked.
+//Phrase-------------------------------------------------------------
+to-infinitive;;VB
+for-V_ing;;VBG
+

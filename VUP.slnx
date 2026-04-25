@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+  <Project Path="VUP.API/VUP.API.csproj" />
+  <Project Path="VUP.Core/VUP.Core.csproj" />
+  <Project Path="VUP.Test/VUP.Test.csproj" />
+</Solution>

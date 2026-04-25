@@ -1,0 +1,6 @@
+services:
+  vup.api:
+    image: ${DOCKER_REGISTRY-}vupapi
+    build:
+      context: .
+      dockerfile: VUP.API/Dockerfile

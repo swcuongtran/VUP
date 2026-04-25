@@ -1,0 +1,517 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\VUP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|c:\\users\\admin\\desktop\\vup\\vup.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|solutionrelative:vup.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\engine\\vupprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\engine\\vupprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\engine\\stanfordparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\engine\\stanfordparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\admin\\desktop\\vup\\docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|c:\\users\\admin\\desktop\\vup\\vup.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|solutionrelative:vup.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\entities\\vupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\entities\\vupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case13matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case13matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\entities\\unknownverb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\entities\\unknownverb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\entities\\verbpattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\entities\\verbpattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\entities\\verb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\entities\\verb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case15matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case15matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\ivpcmatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\ivpcmatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case14matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case14matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case12matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case12matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case11matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case11matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case10matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case10matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case9matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case9matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case8matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case8matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case7matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case7matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case6matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case6matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case4matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case4matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case2matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case2matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case1matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case1matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case3matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case3matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\cases\\case5matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\cases\\case5matcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\basematcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\basematcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\models\\extractionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\models\\extractionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\models\\wordnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\models\\wordnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF03E407-33D2-4D5D-DE88-696CC0521752}|VUP.Test\\VUP.Test.csproj|c:\\users\\admin\\desktop\\vup\\vup.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF03E407-33D2-4D5D-DE88-696CC0521752}|VUP.Test\\VUP.Test.csproj|solutionrelative:vup.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StanfordParserService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\StanfordParserService.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Engine\\StanfordParserService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\StanfordParserService.cs",
+              "RelativeToolTip": "VUP.Core\\Engine\\StanfordParserService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBwAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T01:27:12.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\appsettings.json",
+              "RelativeDocumentMoniker": "VUP.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\appsettings.json",
+              "RelativeToolTip": "VUP.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-18T05:59:54.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VupDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\VupDbContext.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Entities\\VupDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\VupDbContext.cs",
+              "RelativeToolTip": "VUP.Core\\Entities\\VupDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T05:57:49.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnknownVerb.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\UnknownVerb.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Entities\\UnknownVerb.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\UnknownVerb.cs",
+              "RelativeToolTip": "VUP.Core\\Entities\\UnknownVerb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T05:57:18.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\Program.cs",
+              "RelativeDocumentMoniker": "VUP.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\Program.cs",
+              "RelativeToolTip": "VUP.API\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T21:52:58.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VupProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\VupProcessor.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Engine\\VupProcessor.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\VupProcessor.cs",
+              "RelativeToolTip": "VUP.Core\\Engine\\VupProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T09:58:46.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-04-18T05:36:07.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VerbPattern.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\VerbPattern.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Entities\\VerbPattern.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\VerbPattern.cs",
+              "RelativeToolTip": "VUP.Core\\Entities\\VerbPattern.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T05:56:52.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Verb.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\Verb.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Entities\\Verb.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\Verb.cs",
+              "RelativeToolTip": "VUP.Core\\Entities\\Verb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T05:56:32.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Case13Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case13Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case13Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case13Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case13Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:19:53.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Case15Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case15Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case15Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case15Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case15Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:22:53.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Case14Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case14Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case14Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case14Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case14Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:20:08.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Case12Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case12Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case12Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case12Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case12Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:19:22.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Case11Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case11Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case11Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case11Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case11Matcher.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBZwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:19:01.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IVpcMatcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\IVpcMatcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\IVpcMatcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\IVpcMatcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\IVpcMatcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T22:13:51.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Case10Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case10Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case10Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case10Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case10Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:04:19.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Case9Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case9Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case9Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case9Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case9Matcher.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBZwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:03:57.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Case8Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case8Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case8Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case8Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case8Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:03:35.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Case7Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case7Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case7Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case7Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case7Matcher.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:03:15.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Case6Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case6Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case6Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case6Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case6Matcher.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:02:58.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Case4Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case4Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case4Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case4Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case4Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:02:40.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Case2Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case2Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case2Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case2Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case2Matcher.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:02:10.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Case1Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case1Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case1Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case1Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case1Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:01:26.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Case3Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case3Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case3Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case3Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case3Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:00:57.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BaseMatcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\BaseMatcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\BaseMatcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\BaseMatcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\BaseMatcher.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T09:59:45.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ExtractionResult.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Models\\ExtractionResult.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Models\\ExtractionResult.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Models\\ExtractionResult.cs",
+              "RelativeToolTip": "VUP.Core\\Models\\ExtractionResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T22:20:09.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Case5Matcher.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case5Matcher.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case5Matcher.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case5Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case5Matcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T22:14:55.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "WordNode.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Models\\WordNode.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Models\\WordNode.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Models\\WordNode.cs",
+              "RelativeToolTip": "VUP.Core\\Models\\WordNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T22:11:33.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "VUP.Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Test\\UnitTest1.cs",
+              "RelativeToolTip": "VUP.Test\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T21:52:09.617Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
