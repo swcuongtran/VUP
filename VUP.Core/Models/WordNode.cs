@@ -9,7 +9,20 @@
         List<WordNode> Children
     )
     {
-        public WordNode? FindChild(string dep) => Children.FirstOrDefault(child => child.Dep == dep);
-        public bool HasChild(string dep) => Children.Any(child => child.Dep == dep);
+        public WordNode? FindChild(string dep)
+        {
+            if (dep == "dobj")
+                return Children.FirstOrDefault(c => c.Dep == "dobj" || c.Dep == "obj");
+
+            return Children.FirstOrDefault(child => child.Dep == dep || child.Dep.Contains(dep));
+        }
+
+        public bool HasChild(string dep)
+        {
+            if (dep == "dobj")
+                return Children.Any(c => c.Dep == "dobj" || c.Dep == "obj");
+
+            return Children.Any(child => child.Dep == dep || child.Dep.Contains(dep));
+        }
     }
 }

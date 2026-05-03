@@ -4,27 +4,39 @@ namespace VUP.Core.Rules
 {
     public class Case15Matcher : BaseMatcher
     {
+        public override int Priority => 150;
         public override int CaseType => 15;
 
-        public override int Priority => 150;
-
-        public override bool IsMatch(WordNode root) =>
-            root.HasChild("compound:prt") && root.HasChild("nmod");
-
-        protected override string ExtractAction(WordNode root)
+        public override bool IsMatch(WordNode node)
         {
-            var prt = root.FindChild("compound:prt")?.Lemma ?? "";
+            // 1. Tìm Tiểu từ (prt) HOẶC Trạng từ (advmod)
+            bool hasPrtOrAdv = node.HasChild("prt") || node.HasChild("advmod");
 
-            var nmod = root.FindChild("nmod");
+            // 2. Tìm Tân ngữ chứa giới từ (nmod chuẩn cũ HOẶC obl chuẩn mới)
+            var prepObj = node.FindChild("nmod") ?? node.FindChild("obl");
 
-            var prep = nmod?.FindChild("case")?.Lemma ?? "";
+            // 3. Kiểm tra xem tân ngữ đó có chứa giới từ (case) không
+            bool hasCase = prepObj?.HasChild("case") == true;
 
-            return $"{root.Lemma} {prt} {prep}".Trim();
+            return hasPrtOrAdv && hasCase;
         }
 
-        protected override string ExtractObject(WordNode root)
+        // ĐÃ SỬA THÀNH PROTECTED
+        protected override string ExtractAction(WordNode node)
         {
-            return root.FindChild("nmod")?.Lemma ?? "Unknown";
+            var prtNode = node.FindChild("prt") ?? node.FindChild("advmod");
+            var prepObj = node.FindChild("nmod") ?? node.FindChild("obl");
+            var caseNode = prepObj?.FindChild("case");
+
+            return $"{node.Lemma} {prtNode?.Lemma} {caseNode?.Lemma}".Trim().ToLower();
+        }
+
+        // ĐÃ SỬA THÀNH PROTECTED
+        protected override string ExtractObject(WordNode node)
+        {
+            var prepObj = node.FindChild("nmod") ?? node.FindChild("obl");
+
+            return prepObj?.Text ?? "";
         }
     }
 }

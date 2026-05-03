@@ -40,7 +40,11 @@ app.MapPost("/api/analyze", ([FromBody] AnalyzeRequest req,
 
     var result = processor.Process(treeRoot);
 
-    return result != null ? Results.Ok(result) : Results.NotFound("Không tìm thấy Phrasal Verb nào trong câu.");
+    return Results.Ok(new
+    {
+        Extraction = result ?? new ExtractionResult("Unknown", "Unknown", "Unknown", 0, false),
+        DebugTree = treeRoot // Xuất toàn bộ cây Stanford ra Swagger
+    });
 });
 
 if (app.Environment.IsDevelopment())

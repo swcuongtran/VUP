@@ -32,7 +32,7 @@ namespace VUP.Core.Engine
             var tlp = new PennTreebankLanguagePack();
             var gsf = tlp.grammaticalStructureFactory();
             var gs = gsf.newGrammaticalStructure(parsedTree);
-            var tdl = gs.typedDependenciesCollapsed(); 
+            var tdl = gs.typedDependencies(); 
 
             return BuildWordNodeTree(tdl.toArray());
         }

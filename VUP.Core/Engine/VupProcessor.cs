@@ -35,31 +35,60 @@ namespace VUP.Core.Engine
             using var scope = _scopeFactory.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<VupDbContext>();
 
-            var allVerbs = db.Verbs.Select(v => v.Lemma.ToLower()).ToList();
-            _verbDictionary = new HashSet<string>(allVerbs);
+            var allVerbs = db.Verbs.Select(v => v.Lemma.Trim().ToLower()).ToList();
 
-            Console.WriteLine($"[VUP Engine] Đã nạp {_verbDictionary.Count} động từ từ PostgreSQL lên RAM.");
+            var approvedNewVerbs = db.UnknownVerbs
+                                     .Where(u => u.Status == "Approved")
+                                     .Select(u => u.RawAction.Trim().ToLower()).ToList();
+
+            _verbDictionary = new HashSet<string>(allVerbs.Concat(approvedNewVerbs));
+
+            Console.WriteLine($"[VUP Engine] Đã nạp {_verbDictionary.Count} cụm động từ lên RAM.");
         }
 
+        // Bơm thêm hàm đệ quy này vào trong class VupProcessor
+        // Hàm này có tác dụng cào toàn bộ cây từ trên xuống dưới thành 1 danh sách phẳng
+        private List<WordNode> FlattenTree(WordNode node)
+        {
+            var list = new List<WordNode> { node };
+            foreach (var child in node.Children)
+            {
+                list.AddRange(FlattenTree(child));
+            }
+            return list;
+        }
+
+        // Sửa lại hàm Process
         public ExtractionResult? Process(WordNode root)
         {
-            foreach (var matcher in _matchers)
+            var allNodes = FlattenTree(root);
+
+            foreach (var node in allNodes)
             {
-                if (matcher.IsMatch(root))
+                if (string.IsNullOrEmpty(node.Pos) || !node.Pos.StartsWith("V"))
+                    continue;
+
+                foreach (var matcher in _matchers)
                 {
-                    var result = matcher.Extract(root);
-
-                    bool existsInDb = _verbDictionary.Contains(root.Lemma.ToLower());
-
-                    if (!existsInDb)
+                    if (matcher.IsMatch(node))
                     {
-                        _ = RecordUnknownVerbAsync(result.Action, result.Type);
-                    }
+                        var result = matcher.Extract(node);
 
-                    return result with { IsFromDictionary = existsInDb };
+                        string cleanAction = result.Action.Trim().ToLower();
+                        bool existsInDb = _verbDictionary.Contains(node.Lemma.Trim().ToLower()) ||
+                                          _verbDictionary.Contains(cleanAction);
+
+                        if (!existsInDb)
+                        {
+                            _ = RecordUnknownVerbAsync(cleanAction, result.Type);
+                        }
+
+                        return result with { IsFromDictionary = existsInDb };
+                    }
                 }
             }
-            return null;
+
+            return null; 
         }
 
         private async Task RecordUnknownVerbAsync(string rawAction, int type)
