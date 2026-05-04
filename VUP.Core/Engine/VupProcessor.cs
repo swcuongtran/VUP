@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using VUP.Core.Entities;
 using VUP.Core.Models;
 using VUP.Core.Rules;
@@ -25,12 +26,22 @@ namespace VUP.Core.Engine
                 using var scope = _scopeFactory.CreateScope();
                 var db = scope.ServiceProvider.GetRequiredService<VupDbContext>();
 
-                var allVerbs = db.Verbs.Select(v => v.Lemma.Trim().ToLower()).ToList();
+                // 1. Lấy các động từ gốc (VD: run, sleep)
+                var baseVerbs = db.Verbs.Select(v => v.Lemma.Trim().ToLower()).ToList();
+
+                // 2. Lấy Phrasal Verbs bằng cách nối Lemma và Particle (VD: turn off, pick up)
+                var phrasalVerbs = db.Verbs
+                    .Include(v => v.Patterns)
+                    .SelectMany(v => v.Patterns.Select(p => $"{v.Lemma} {p.Particle}".Trim().ToLower()))
+                    .ToList();
+
+                // 3. Lấy các từ mới đã được duyệt
                 var approvedNewVerbs = db.UnknownVerbs
                                          .Where(u => u.Status == "Approved")
                                          .Select(u => u.RawAction.Trim().ToLower()).ToList();
 
-                _verbDictionary = new HashSet<string>(allVerbs.Concat(approvedNewVerbs));
+                // Gộp tất cả lại
+                _verbDictionary = new HashSet<string>(baseVerbs.Concat(phrasalVerbs).Concat(approvedNewVerbs));
                 Console.WriteLine($"[VUP Engine] Đã nạp {_verbDictionary.Count} cụm động từ lên RAM.");
             }
             catch (Exception ex)
@@ -66,8 +77,14 @@ namespace VUP.Core.Engine
                 if (string.IsNullOrEmpty(node.Pos) || !node.Pos.StartsWith("V") || node.Lemma == "be")
                     continue;
 
-                // Lọc các từ bị Parser đoán mò (độ dài quá ngắn)
                 if (string.IsNullOrEmpty(node.Lemma) || node.Lemma.Length <= 1)
+                    continue;
+
+                // --- LOGIC LỌC NHIỄU MỚI THÊM VÀO ĐÂY ---
+                bool hasSubject = node.HasChild("nsubj") || node.HasChild("nsubjpass") || node.HasChild("nsubj:pass");
+
+                // Nếu từ bị ép làm động từ nhưng KHÔNG có chủ ngữ và KHÔNG ở dạng nguyên thể (VB/VBP) -> Đích thị là danh từ bị nhận nhầm
+                if (!hasSubject && node.Pos != "VB" && node.Pos != "VBP")
                     continue;
 
                 foreach (var matcher in _matchers)

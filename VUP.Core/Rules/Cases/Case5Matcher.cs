@@ -5,7 +5,7 @@ namespace VUP.Core.Rules
 {
     public class Case5Matcher : BaseMatcher
     {
-        public override int Priority => 50;
+        public override int Priority => 100;
         public override int CaseType => 5;
 
         private readonly string[] _ignoredAdverbs = { "really", "very", "extremely", "just", "simply", "completely", "immediately", "exactly" };

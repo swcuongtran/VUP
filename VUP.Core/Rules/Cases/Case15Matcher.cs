@@ -5,7 +5,7 @@ namespace VUP.Core.Rules
 {
     public class Case15Matcher : BaseMatcher
     {
-        public override int Priority => 150;
+        public override int Priority => 140;
         public override int CaseType => 15;
 
         // Các trạng từ rác cần né

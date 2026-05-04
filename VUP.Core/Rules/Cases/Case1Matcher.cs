@@ -5,7 +5,7 @@ namespace VUP.Core.Rules
     public class Case1Matcher : BaseMatcher
     {
         public override int CaseType => 1;
-        public override int Priority => 10;
+        public override int Priority => 60;
 
         public override bool IsMatch(WordNode root) =>
             !root.HasChild("dobj") && !root.HasChild("iobj") && !root.HasChild("compound:prt");

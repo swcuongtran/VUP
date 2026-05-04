@@ -11,7 +11,7 @@ namespace VUP.Core.Rules.Cases
     public class Case14Matcher : BaseMatcher
     {
         public override int CaseType => 14;
-        public override int Priority => 140;
+        public override int Priority => 40;
 
         public override bool IsMatch(WordNode root) =>
             !root.HasChild("dobj") && root.HasChild("xcomp");

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VUP.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b70ac59e7e5178467597fc674ffbc642daf634f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aec5503d5c6effe26eec8113eb1e9f464e2b934f")]
 [assembly: System.Reflection.AssemblyProductAttribute("VUP.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VUP.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

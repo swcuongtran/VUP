@@ -10,7 +10,7 @@ namespace VUP.Core.Rules.Cases
     public class Case9Matcher : BaseMatcher
     {
         public override int CaseType => 9;
-        public override int Priority => 90;
+        public override int Priority => 190;
 
         public override bool IsMatch(WordNode root)
         {
