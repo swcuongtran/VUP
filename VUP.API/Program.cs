@@ -2,7 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using VUP.Core.Engine;
 using VUP.Core.Entities;
-using VUP.Core.Models; 
+using VUP.Core.Models;
+using VUP.Core.Rules;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,16 @@ builder.Services.AddSingleton<VupProcessor>();
 
 var modelsPath = Path.Combine(Directory.GetCurrentDirectory(), "models");
 builder.Services.AddSingleton(new StanfordParserService(modelsPath));
+
+var matcherTypes = typeof(BaseMatcher).Assembly.GetTypes()
+    .Where(t => t.IsSubclassOf(typeof(BaseMatcher)) && !t.IsAbstract);
+
+foreach (var type in matcherTypes)
+{
+    builder.Services.AddSingleton(typeof(BaseMatcher), type);
+}
+
+builder.Services.AddSingleton<VupProcessor>();
 
 var app = builder.Build();
 

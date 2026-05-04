@@ -12,10 +12,13 @@ namespace VUP.Core.Rules
         protected abstract string ExtractAction(WordNode node);
         protected abstract string ExtractObject(WordNode node);
 
-        // Hỗ trợ trích xuất cả chủ ngữ chủ động lẫn chủ ngữ bị động
         protected virtual string ExtractSubject(WordNode node)
         {
-            var subjNode = node.FindChild("nsubj") ?? node.FindChild("nsubjpass");
+            var subjNode = node.Children.FirstOrDefault(c =>
+                c.Dep == "nsubj" ||
+                c.Dep == "nsubjpass" ||
+                c.Dep == "nsubj:pass");
+
             return subjNode?.Text ?? "Unknown";
         }
 

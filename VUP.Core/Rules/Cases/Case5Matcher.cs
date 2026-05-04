@@ -14,8 +14,7 @@ namespace VUP.Core.Rules
         {
             bool hasObj = node.HasChild("obj") || node.HasChild("dobj");
 
-            // Tìm Tiểu từ, cho phép lấy cả obl NẾU obl đó đứng một mình (không có child)
-            var prtNode = node.FindChild("prt") ??
+            var prtNode = node.FindChild("compound:prt") ?? node.FindChild("prt") ??
                           node.Children.FirstOrDefault(c =>
                               (c.Dep.Contains("advmod") || (c.Dep == "obl" && (c.Children == null || c.Children.Count == 0)))
                               && !_ignoredAdverbs.Contains(c.Lemma.ToLower()));
@@ -25,12 +24,13 @@ namespace VUP.Core.Rules
 
         protected override string ExtractAction(WordNode node)
         {
-            var prtNode = node.FindChild("prt") ??
+            var prtNode = node.FindChild("compound:prt") ?? node.FindChild("prt") ??
                           node.Children.FirstOrDefault(c =>
                               (c.Dep.Contains("advmod") || (c.Dep == "obl" && (c.Children == null || c.Children.Count == 0)))
                               && !_ignoredAdverbs.Contains(c.Lemma.ToLower()));
 
-            return $"{node.Lemma} {prtNode?.Lemma}".Trim().ToLower();
+            var parts = new[] { node.Lemma, prtNode?.Lemma }.Where(p => !string.IsNullOrWhiteSpace(p));
+            return string.Join(" ", parts).ToLower();
         }
 
         protected override string ExtractObject(WordNode node)

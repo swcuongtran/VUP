@@ -13,8 +13,7 @@ namespace VUP.Core.Rules
 
         public override bool IsMatch(WordNode node)
         {
-            // Tìm Tiểu từ, tự động loại bỏ các trạng từ nhiễu
-            var prtNode = node.FindChild("prt") ??
+            var prtNode = node.FindChild("compound:prt") ?? node.FindChild("prt") ??
                           node.Children.FirstOrDefault(c => c.Dep.Contains("advmod") && !_ignoredAdverbs.Contains(c.Lemma.ToLower()));
 
             var prepObj = node.FindChild("nmod") ?? node.FindChild("obl");
@@ -25,13 +24,14 @@ namespace VUP.Core.Rules
 
         protected override string ExtractAction(WordNode node)
         {
-            var prtNode = node.FindChild("prt") ??
+            var prtNode = node.FindChild("compound:prt") ?? node.FindChild("prt") ??
                           node.Children.FirstOrDefault(c => c.Dep.Contains("advmod") && !_ignoredAdverbs.Contains(c.Lemma.ToLower()));
 
             var prepObj = node.FindChild("nmod") ?? node.FindChild("obl");
             var caseNode = prepObj?.FindChild("case");
 
-            return $"{node.Lemma} {prtNode?.Lemma} {caseNode?.Lemma}".Trim().ToLower();
+            var parts = new[] { node.Lemma, prtNode?.Lemma, caseNode?.Lemma }.Where(p => !string.IsNullOrWhiteSpace(p));
+            return string.Join(" ", parts).ToLower();
         }
 
         protected override string ExtractObject(WordNode node)

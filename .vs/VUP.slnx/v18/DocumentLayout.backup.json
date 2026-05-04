@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\VUP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|c:\\users\\admin\\desktop\\vup\\vup.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|solutionrelative:vup.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\rules\\basematcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\rules\\basematcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\entities\\unknownverb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|solutionrelative:vup.core\\entities\\unknownverb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|c:\\users\\admin\\desktop\\vup\\vup.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECA17D18-AA8B-79E3-3EB3-D3C8313D44D3}|VUP.API\\VUP.API.csproj|solutionrelative:vup.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8666BD7-D880-A1A9-EFAE-BE4F486A155A}|VUP.Core\\VUP.Core.csproj|c:\\users\\admin\\desktop\\vup\\vup.core\\models\\wordnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,19 +142,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VupProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\VupProcessor.cs",
-              "RelativeDocumentMoniker": "VUP.Core\\Engine\\VupProcessor.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\VupProcessor.cs*",
-              "RelativeToolTip": "VUP.Core\\Engine\\VupProcessor.cs*",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAwwI0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T09:58:46.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "20260418074948_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Migrations\\20260418074948_InitialCreate.cs",
@@ -180,12 +167,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Case15Matcher.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case15Matcher.cs",
               "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case15Matcher.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case15Matcher.cs*",
-              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case15Matcher.cs*",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case15Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case15Matcher.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAwwCoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T10:22:53.837Z",
@@ -193,12 +180,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Case5Matcher.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case5Matcher.cs",
               "RelativeDocumentMoniker": "VUP.Core\\Rules\\Cases\\Case5Matcher.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case5Matcher.cs*",
-              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case5Matcher.cs*",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\Cases\\Case5Matcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\Cases\\Case5Matcher.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAwwCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T22:14:55.623Z",
@@ -206,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UnknownVerb.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Entities\\UnknownVerb.cs",
               "RelativeDocumentMoniker": "VUP.Core\\Entities\\UnknownVerb.cs",
@@ -219,12 +206,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BaseMatcher.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\BaseMatcher.cs",
               "RelativeDocumentMoniker": "VUP.Core\\Rules\\BaseMatcher.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\BaseMatcher.cs*",
-              "RelativeToolTip": "VUP.Core\\Rules\\BaseMatcher.cs*",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Rules\\BaseMatcher.cs",
+              "RelativeToolTip": "VUP.Core\\Rules\\BaseMatcher.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAwwB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T09:59:45.689Z",
@@ -232,15 +219,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\Program.cs",
               "RelativeDocumentMoniker": "VUP.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\Program.cs",
-              "RelativeToolTip": "VUP.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.API\\Program.cs*",
+              "RelativeToolTip": "VUP.API\\Program.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T21:52:58.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VupProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\VupProcessor.cs",
+              "RelativeDocumentMoniker": "VUP.Core\\Engine\\VupProcessor.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\VUP\\VUP.Core\\Engine\\VupProcessor.cs",
+              "RelativeToolTip": "VUP.Core\\Engine\\VupProcessor.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAwwI0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T09:58:46.947Z",
               "EditorCaption": ""
             },
             {
