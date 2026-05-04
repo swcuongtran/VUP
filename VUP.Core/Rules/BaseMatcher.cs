@@ -2,47 +2,30 @@
 
 namespace VUP.Core.Rules
 {
-    public abstract class BaseMatcher : IVpcMatcher
+    public abstract class BaseMatcher
     {
-        public abstract int CaseType { get; }
         public abstract int Priority { get; }
+        public abstract int CaseType { get; }
 
-        public abstract bool IsMatch(WordNode root);
+        public abstract bool IsMatch(WordNode node);
 
-        protected abstract string ExtractAction(WordNode root);
-        protected abstract string ExtractObject(WordNode root);
+        protected abstract string ExtractAction(WordNode node);
+        protected abstract string ExtractObject(WordNode node);
 
-        public ExtractionResult Extract(WordNode root)
+        // Hỗ trợ trích xuất cả chủ ngữ chủ động lẫn chủ ngữ bị động
+        protected virtual string ExtractSubject(WordNode node)
         {
-            string subject = FindSubject(root);
-            string action = ExtractAction(root);
-            string obj = ExtractObject(root);
-
-            return new ExtractionResult
-            (
-                Subject: subject,
-                Action: action,
-                Object: obj,
-                Type: CaseType,
-                IsFromDictionary: true 
-            );
+            var subjNode = node.FindChild("nsubj") ?? node.FindChild("nsubjpass");
+            return subjNode?.Text ?? "Unknown";
         }
 
-        protected string FindSubject(WordNode root)
+        public virtual ExtractionResult Extract(WordNode node)
         {
-            var nsubj = root.FindChild("nsubj");
-            if (nsubj != null) return nsubj.Text;
+            string subject = ExtractSubject(node);
+            string action = ExtractAction(node);
+            string obj = ExtractObject(node);
 
-            var nsubjpass = root.FindChild("nsubjpass");
-            if (nsubjpass != null) return nsubjpass.Text;
-
-            var xsubj = root.FindChild("xsubj");
-            if (xsubj != null) return xsubj.Text;
-
-            var csubj = root.FindChild("csubj");
-            if (csubj != null) return "[Mệnh đề phụ]";
-
-            return "Unknown";
+            return new ExtractionResult(subject, action, obj, CaseType, false);
         }
     }
 }
