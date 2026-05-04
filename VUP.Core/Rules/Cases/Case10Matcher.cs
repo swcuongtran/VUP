@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VUP.Core.Models;
+﻿using VUP.Core.Models;
 
 namespace VUP.Core.Rules.Cases
 {
@@ -15,10 +10,24 @@ namespace VUP.Core.Rules.Cases
         public override bool IsMatch(WordNode root)
         {
             var xcomp = root.FindChild("xcomp");
-            return xcomp != null && xcomp.Pos == "VBG";
+            return xcomp != null && xcomp.Pos.StartsWith("VBG"); // Bắt các dạng V-ing
         }
 
         protected override string ExtractAction(WordNode root) => $"{root.Lemma} doing sth";
-        protected override string ExtractObject(WordNode root) => root.FindChild("xcomp")?.Lemma ?? "";
+
+        protected override string ExtractObject(WordNode root)
+        {
+            var xcomp = root.FindChild("xcomp");
+            if (xcomp == null) return "Unknown";
+
+            // Nếu xcomp (V-ing) có tân ngữ bên trong (như "watching" có "sunset"), thì lấy toàn bộ cụm
+            var innerObj = xcomp.FindChild("obj") ?? xcomp.FindChild("dobj");
+            if (innerObj != null)
+            {
+                return $"{xcomp.Lemma} {innerObj.Text}".Trim();
+            }
+
+            return xcomp.Lemma;
+        }
     }
 }
